@@ -1,0 +1,17 @@
+package com.epam.lab;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class LMSLogin {
+    public static void main(String[] args) {
+        WebDriver driver;
+        WebDriverManager.chromedriver().setup();
+        driver=new ChromeDriver();
+        driver.get("https://lms.kluniversity.in/login/index.php");
+        driver.findElement(By.ById.id("username")).sendKeys("#########");
+       
+    }
+}
