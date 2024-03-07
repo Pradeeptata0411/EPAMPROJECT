@@ -12,6 +12,6 @@ public class LMSLogin {
         driver=new ChromeDriver();
         driver.get("https://lms.kluniversity.in/login/index.php");
         driver.findElement(By.ById.id("username")).sendKeys("#########");
-       
+         driver.findElement(By.ById.id("password")).sendKeys("******************");
     }
 }
